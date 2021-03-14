@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Sirenix.OdinInspector;
 using UnityEngine;
+using Zenject;
 
 public class Test : MonoBehaviour
 {
@@ -22,10 +23,18 @@ public class Test : MonoBehaviour
             }
         }
     }
+
+    [Inject]
+    private PopupTextController m_popupTextController;
     private void Update()
     {
-    
-        // Debug.Log($"{grid.WorldToCell(transform.position)}");
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            Vector3 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            pos.z = 0;
+            m_popupTextController.Create(grid.WorldToCell(pos).ToString(), pos);
+        }
     }
 
     private void OnDrawGizmos()
