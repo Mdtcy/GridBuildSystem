@@ -161,7 +161,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 19734137}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1988d2e2eae414b649f36ffd21eec631, type: 3}
   m_Name: 
@@ -275,13 +275,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 618815205}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 809116bc785be4f909e1a64aa9ff7478, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   grid: {fileID: 618815207}
-  transform: {fileID: 1976970959}
+  transform: {fileID: 0}
 --- !u!156049354 &618815207
 Grid:
   m_ObjectHideFlags: 0
@@ -290,7 +290,7 @@ Grid:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 618815205}
   m_Enabled: 1
-  m_CellSize: {x: 6, y: 6, z: 1}
+  m_CellSize: {x: 1, y: 1, z: 1}
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
